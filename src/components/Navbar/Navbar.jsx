@@ -1,7 +1,15 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router";
+import { FiSun , FiMoon } from "react-icons/fi";
+import './Navbar.css'
 
 const Navbar = () => {
+
+    const [darkMode, setDarkMode] = useState(false);
+
+    useEffect(() =>{
+      document.body.className = darkMode ? "dark" : "light"
+    },[darkMode])
 
     const links = <>
         <NavLink className="mr-4" to="/"><li>Home</li></NavLink>
@@ -12,7 +20,7 @@ const Navbar = () => {
     </>
 
   return (
-    <div className="navbar bg-base-100 ">
+    <div className="navbar ">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -47,7 +55,12 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn">Resume</a>
+        <a onClick={() => setDarkMode(!darkMode)} className="theme-toggle">
+          {
+            darkMode ? <FiSun size={25}></FiSun> : <FiMoon size={25}></FiMoon>
+          }
+        </a>
+        <a className="btn ml-2">Resume</a>
       </div>
     </div>
   );

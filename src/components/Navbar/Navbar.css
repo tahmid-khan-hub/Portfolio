@@ -1,0 +1,18 @@
+body.light {
+  background-color: rgb(249, 239, 239);
+  color: rgb(0, 0, 0);
+}
+
+body.dark {
+  background-color: #080b1d;
+  color: white;
+}
+
+.theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin: 20px;
+  margin-right: 5px;
+  /* padding-right: 6px; */
+}
