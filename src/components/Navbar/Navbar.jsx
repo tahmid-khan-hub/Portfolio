@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { FiSun, FiMoon } from "react-icons/fi";
 import "./Navbar.css";
+import { Link } from "react-router";
 
 const Navbar = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -70,14 +71,9 @@ const Navbar = () => {
         <button onClick={() => setDarkMode(!darkMode)} className="theme-toggle">
           {darkMode ? <FiSun size={25} /> : <FiMoon size={25} />}
         </button>
-        <a
-          className="btn ml-2"
-          href="/resume.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+       <Link to="resume"><a className="btn ml-2">
           Resume
-        </a>
+        </a></Link>
       </div>
     </div>
   );
