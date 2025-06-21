@@ -20,13 +20,13 @@ const Banner = () => {
 
         <TypeAnimation
           sequence={[
-            'A Student',
-            2000,
             'A MERN Stack Developer',
             2000,
             'A React.js Enthusiast',
             2000,
             'A Problem Solver',
+            2000,
+            'A Student',
             2000,
           ]}
           wrapper="h2"
