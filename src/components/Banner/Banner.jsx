@@ -15,15 +15,15 @@ const Banner = () => {
   return (
     <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-10 py-16">
       {/* Left Side: Text */}
-      <div
-        className="flex-1 pl-11"
+      <div className="flex-1 ml-0 md:ml-11" data-aos="fade-right">
+        <h1
           data-aos="fade-right"
-      >
-        <h1 data-aos="fade-right" className="text-4xl md:text-6xl font-bold mb-4">
+          className="text-4xl md:text-6xl font-bold mb-4 text-center md:text-left"
+        >
           Hi, I'm <span className="text-lime-600">Tahmid</span>
         </h1>
 
-        <TypeAnimation 
+        <TypeAnimation
           sequence={[
             "A MERN Stack Developer",
             2000,
@@ -37,19 +37,30 @@ const Banner = () => {
           wrapper="h2"
           speed={50}
           repeat={Infinity}
-          className="text-2xl md:text-4xl text-gray-500 mb-6"
+          className="text-2xl md:text-4xl text-gray-500 mb-6 text-center md:text-left"
         />
 
-        <p data-aos="fade-right" className="text-base md:text-lg text-gray-500 mb-6 max-w-xl">
+        <p
+          data-aos="fade-right"
+          className="text-base md:text-lg text-gray-500 mb-6 max-w-xl text-center md:text-left"
+        >
           I build dynamic and responsive websites with modern technologies.
           Let's build something amazing together.
         </p>
 
-        <div data-aos="fade-right" className="flex gap-4">
-          <a href="#contact" className="btn bg-gradient-to-r from-lime-400 via-lime-500 to-lime-600 hover:bg-gradient-to-l hover:from-lime-200 hover:via-lime-300 hover:to-lime-400 border-2 border-lime-300">
+        <div
+          data-aos="fade-right"
+          className="flex justify-center items-center gap-4  md:justify-start"
+        >
+          <a
+            href="#contact"
+            className="btn bg-gradient-to-r from-lime-400 via-lime-500 to-lime-600 hover:bg-gradient-to-l hover:from-lime-200 hover:via-lime-300 hover:to-lime-400 border-2 border-lime-300"
+          >
             Hire Me
           </a>
-          <a className="btn bg-gradient-to-r from-lime-400 via-lime-500 to-lime-600 hover:bg-gradient-to-l hover:from-lime-200 hover:via-lime-300 hover:to-lime-400 border-2 border-lime-300">Download Resume</a>
+          <a className="btn bg-gradient-to-r from-lime-400 via-lime-500 to-lime-600 hover:bg-gradient-to-l hover:from-lime-200 hover:via-lime-300 hover:to-lime-400 border-2 border-lime-300">
+            Download Resume
+          </a>
         </div>
       </div>
 
