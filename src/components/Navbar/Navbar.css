@@ -1,5 +1,5 @@
 body.light {
-  background-color: #f8fafc; 
+  background-color: #f2fcf5; 
   color: #1a1a1a; 
 }
 
@@ -15,5 +15,4 @@ body.dark {
   cursor: pointer;
   margin: 20px;
   margin-right: 5px;
-  /* padding-right: 6px; */
 }

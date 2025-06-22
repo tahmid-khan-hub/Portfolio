@@ -13,33 +13,33 @@ const Navbar = () => {
   const links = (
     <>
       <li>
-        <a className="mr-4" href="#banner">
+        <a className="mr-4 font-semibold hover:bg-lime-500 hover:text-black" href="#banner">
           Banner
         </a>
       </li>
       <li>
-        <a className="mr-4" href="#about">
+        <a className="mr-4 font-semibold hover:bg-lime-500 hover:text-black" href="#about">
           About
         </a>
       </li>
       <li>
-        <a className="mr-4" href="#skills">
+        <a className="mr-4 font-semibold hover:bg-lime-500 hover:text-black" href="#skills">
           Skills
         </a>
       </li>
       <li>
-        <a className="mr-4" href="#projects">
+        <a className="mr-4 font-semibold hover:bg-lime-500 hover:text-black" href="#projects">
           Projects
         </a>
       </li>
       <li>
-        <a href="#contact">Contact</a>
+        <a className="font-semibold hover:bg-lime-500 hover:text-black" href="#contact">Contact</a>
       </li>
     </>
   );
 
   return (
-    <div className="navbar sticky z-50 top-0 text-lime-600">
+    <div className="navbar  text-lime-600">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -58,7 +58,7 @@ const Navbar = () => {
               />
             </svg>
           </div>
-          <ul className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow text-blue-950">
+          <ul className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow text-lime-800">
             {links}
           </ul>
         </div>
@@ -71,7 +71,7 @@ const Navbar = () => {
         <button onClick={() => setDarkMode(!darkMode)} className="theme-toggle">
           {darkMode ? <FiSun size={25} /> : <FiMoon size={25} />}
         </button>
-       <Link to="resume"><a className="btn ml-2">
+       <Link to="resume"><a className="btn bg-gradient-to-r from-lime-400 via-lime-500 to-lime-600 hover:bg-gradient-to-l hover:from-lime-200 hover:via-lime-300 hover:to-lime-400 border-2 border-lime-300 ml-2">
           Resume
         </a></Link>
       </div>

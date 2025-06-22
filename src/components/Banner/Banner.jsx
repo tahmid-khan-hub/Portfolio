@@ -46,10 +46,10 @@ const Banner = () => {
         </p>
 
         <div data-aos="fade-right" className="flex gap-4">
-          <a href="#contact" className="btn ">
+          <a href="#contact" className="btn bg-gradient-to-r from-lime-400 via-lime-500 to-lime-600 hover:bg-gradient-to-l hover:from-lime-200 hover:via-lime-300 hover:to-lime-400 border-2 border-lime-300">
             Hire Me
           </a>
-          <a className="btn border-2">Download Resume</a>
+          <a className="btn bg-gradient-to-r from-lime-400 via-lime-500 to-lime-600 hover:bg-gradient-to-l hover:from-lime-200 hover:via-lime-300 hover:to-lime-400 border-2 border-lime-300">Download Resume</a>
         </div>
       </div>
 
