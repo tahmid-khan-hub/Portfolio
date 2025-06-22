@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs } from "react-icons/fa";
 import {
@@ -7,6 +7,8 @@ import {
   SiExpress,
   SiMongodb,
 } from "react-icons/si";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const skills = [
   {
@@ -75,6 +77,13 @@ const skills = [
 ];
 
 const Skills = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: false,
+    });
+    AOS.refresh();
+  }, []);
   return (
     <section className="py-16 px-4 max-w-6xl mx-auto">
       <div className="text-center mb-12">
@@ -89,12 +98,18 @@ const Skills = () => {
         {skills.map((skill) => (
           <motion.div
             key={skill.name}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 2 }}
-            // transition={{ delay: index * 0.1 }}
-            viewport={{ once: true }}
+            animate={{
+              y: [0, -20, 0],
+            }}
+            transition={{
+              duration: 3,
+              repeat: Infinity,
+              repeatType: "loop",
+              ease: "easeInOut",
+            }}
+            // viewport={{ once: true }}
             className={`relative rounded-2xl p-8 overflow-hidden shadow-md hover:shadow-xl transition duration-300 ${skill.bg} text-center ${skill.shadow}`}
           >
             {/* Full shimmer overlay */}
