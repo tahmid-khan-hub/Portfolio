@@ -52,15 +52,15 @@ const Banner = () => {
           data-aos="fade-right"
           className="flex justify-center items-center gap-4  md:justify-start"
         >
-          <a
+          <motion.a whileHover={{scale: 1.05}}
             href="#contact"
             className="btn bg-gradient-to-r from-lime-400 via-lime-500 to-lime-600 hover:bg-gradient-to-l hover:from-lime-200 hover:via-lime-300 hover:to-lime-400 border-2 border-lime-300"
           >
             Hire Me
-          </a>
-          <a className="btn bg-gradient-to-r from-lime-400 via-lime-500 to-lime-600 hover:bg-gradient-to-l hover:from-lime-200 hover:via-lime-300 hover:to-lime-400 border-2 border-lime-300">
+          </motion.a>
+          <motion.a whileHover={{scale: 1.05}} className="btn bg-gradient-to-r from-lime-400 via-lime-500 to-lime-600 hover:bg-gradient-to-l hover:from-lime-200 hover:via-lime-300 hover:to-lime-400 border-2 border-lime-300">
             Download Resume
-          </a>
+          </motion.a>
         </div>
       </div>
 

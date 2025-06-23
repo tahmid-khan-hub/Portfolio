@@ -7,6 +7,7 @@ import {
   FaWhatsapp,
 } from "react-icons/fa";
 import Swal from "sweetalert2";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   const form = useRef();
@@ -124,12 +125,13 @@ const Contact = () => {
               />
             </div>
 
-            <button
+            <motion.button
+              whileHover={{scale: 1.05}}
               type="submit"
               className="flex items-center gap-2 px-6 py-3 btn bg-gradient-to-r from-lime-400 via-lime-500 to-lime-600 hover:from-lime-300 hover:to-lime-500 border-2 border-lime-300"
             >
               <FaPaperPlane /> Send Message
-            </button>
+            </motion.button>
           </form>
         </div>
       </div>

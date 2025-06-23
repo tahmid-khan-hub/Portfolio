@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { FiSun, FiMoon } from "react-icons/fi";
 import "./Navbar.css";
 import { Link } from "react-router";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -71,9 +72,9 @@ const Navbar = () => {
         <button onClick={() => setDarkMode(!darkMode)} className="theme-toggle">
           {darkMode ? <FiSun size={25} /> : <FiMoon size={25} />}
         </button>
-       <Link to="resume"><a className="btn bg-gradient-to-r from-lime-400 via-lime-500 to-lime-600 hover:bg-gradient-to-l hover:from-lime-200 hover:via-lime-300 hover:to-lime-400 border-2 border-lime-300 ml-2">
+       <Link to="resume"><motion.a whileHover={{scale: 1.05}} className="btn bg-gradient-to-r from-lime-400 via-lime-500 to-lime-600 hover:bg-gradient-to-l hover:from-lime-200 hover:via-lime-300 hover:to-lime-400 border-2 border-lime-300 ml-2">
           Resume
-        </a></Link>
+        </motion.a></Link>
       </div>
     </div>
   );
