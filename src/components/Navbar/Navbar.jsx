@@ -40,7 +40,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="navbar  text-lime-600">
+    <div className="navbar sticky top-0 z-50 bg-lime-50 text-lime-600">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -69,9 +69,9 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1">{links}</ul>
       </div>
       <div className="navbar-end">
-        <button onClick={() => setDarkMode(!darkMode)} className="theme-toggle">
+        {/* <button onClick={() => setDarkMode(!darkMode)} className="theme-toggle">
           {darkMode ? <FiSun size={25} /> : <FiMoon size={25} />}
-        </button>
+        </button> */}
        <Link to="resume"><motion.a whileHover={{scale: 1.05}} className="btn bg-gradient-to-r from-lime-400 via-lime-500 to-lime-500 hover:bg-gradient-to-l hover:from-lime-300 hover:via-lime-400 hover:to-lime-400 border-2 border-lime-300 ml-2">
           Resume
         </motion.a></Link>
