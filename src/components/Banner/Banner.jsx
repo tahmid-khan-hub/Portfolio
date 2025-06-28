@@ -4,6 +4,8 @@ import { TypeAnimation } from "react-type-animation";
 import profileImg from "../../assets/myImage.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { FaGithub } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
 
 const Banner = () => {
   useEffect(() => {
@@ -20,7 +22,7 @@ const Banner = () => {
           data-aos="fade-right"
           className="text-4xl md:text-6xl font-bold mb-4 text-center md:text-left"
         >
-          Hi, I'm <span className="text-lime-600">Tahmid</span>
+          Hi, I'm <span className="text-lime-500">Tahmid</span>
         </h1>
 
         <TypeAnimation
@@ -42,23 +44,22 @@ const Banner = () => {
 
         <p
           data-aos="fade-right"
-          className="text-base md:text-lg text-gray-500 mb-6 max-w-xl text-center md:text-left"
+          className="text-base md:text-lg text-gray-500 mb-3 max-w-xl text-center md:text-left"
         >
-          I build dynamic and responsive websites with modern technologies.
-          Let's build something amazing together.
+          I'm a university student who builds responsive and user-friendly websites using modern web technologies.
         </p>
+
+        <div className="flex mb-3">
+          <a href="https://github.com/tahmid-khan-hub" target="_blank"><FaGithub size={35} /></a>
+          <a href="https://www.facebook.com/tahmid.khan.35762241" target="_blank"><FaFacebook className="text-blue-500 ml-3" size={35}/></a>
+        </div>
 
         <div
           data-aos="fade-right"
           className="flex justify-center items-center gap-4  md:justify-start"
         >
-          <motion.a whileHover={{scale: 1.05}}
-            href="#contact"
-            className="btn bg-gradient-to-r from-lime-400 via-lime-500 to-lime-600 hover:bg-gradient-to-l hover:from-lime-200 hover:via-lime-300 hover:to-lime-400 border-2 border-lime-300"
-          >
-            Hire Me
-          </motion.a>
-          <motion.a whileHover={{scale: 1.05}} className="btn bg-gradient-to-r from-lime-400 via-lime-500 to-lime-600 hover:bg-gradient-to-l hover:from-lime-200 hover:via-lime-300 hover:to-lime-400 border-2 border-lime-300">
+          
+          <motion.a whileHover={{scale: 1.05}} className="btn bg-gradient-to-r from-lime-400 via-lime-500 to-lime-500 hover:bg-gradient-to-l hover:from-lime-300 hover:via-lime-400 hover:to-lime-400 border-2 border-lime-300">
             Download Resume
           </motion.a>
         </div>

@@ -128,7 +128,7 @@ const Contact = () => {
             <motion.button
               whileHover={{scale: 1.05}}
               type="submit"
-              className="flex items-center gap-2 px-6 py-3 btn bg-gradient-to-r from-lime-400 via-lime-500 to-lime-600 hover:from-lime-300 hover:to-lime-500 border-2 border-lime-300"
+              className="flex items-center gap-2 px-6 py-3 btn bg-gradient-to-r from-lime-400 via-lime-500 to-lime-500 hover:bg-gradient-to-l hover:from-lime-300 hover:via-lime-400 hover:to-lime-400 border-2 border-lime-300"
             >
               <FaPaperPlane /> Send Message
             </motion.button>
