@@ -86,12 +86,8 @@ const Skills = () => {
   }, []);
   return (
     <section className="py-16">
-      <div className="text-center mb-12">
+      <div className="text-center mb-12 mt-16">
         <h2 className="text-4xl font-bold text-lime-500">My Skills</h2>
-        <p className="text-gray-600 dark:text-gray-400 mt-4 max-w-2xl mx-auto">
-          Technologies I’ve learned so far — each contributing to my journey as
-          a full-stack developer.
-        </p>
       </div>
 
       <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">

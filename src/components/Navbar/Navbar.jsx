@@ -3,6 +3,7 @@ import { FiSun, FiMoon } from "react-icons/fi";
 import "./Navbar.css";
 import { Link } from "react-router";
 import { motion } from "framer-motion";
+import brand from "../../assets/ownBrand.png"
 
 const Navbar = () => {
 
@@ -63,7 +64,9 @@ const Navbar = () => {
             {links}
           </ul>
         </div>
-        <a className="text-xl font-semibold ml-3">Portfolio</a>
+        <div className="bg-lime-50">
+           <img className="w-11 object-cover rounded-full" src={brand}></img>
+        </div>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{links}</ul>
