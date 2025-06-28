@@ -1,15 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { FiSun, FiMoon } from "react-icons/fi";
 import "./Navbar.css";
 import { Link } from "react-router";
 import { motion } from "framer-motion";
 
 const Navbar = () => {
-  const [darkMode, setDarkMode] = useState(false);
-
-  useEffect(() => {
-    document.body.className = darkMode ? "dark" : "light";
-  }, [darkMode]);
 
   const links = (
     <>
@@ -69,9 +64,7 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1">{links}</ul>
       </div>
       <div className="navbar-end">
-        {/* <button onClick={() => setDarkMode(!darkMode)} className="theme-toggle">
-          {darkMode ? <FiSun size={25} /> : <FiMoon size={25} />}
-        </button> */}
+        
        <Link to="resume"><motion.a whileHover={{scale: 1.05}} className="btn bg-gradient-to-r from-lime-400 via-lime-500 to-lime-500 hover:bg-gradient-to-l hover:from-lime-300 hover:via-lime-400 hover:to-lime-400 border-2 border-lime-300 ml-2">
           Resume
         </motion.a></Link>

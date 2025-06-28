@@ -60,8 +60,8 @@ const Projects = () => {
           {projects.map((project, index) => (
             <motion.div
               key={index}
-              data-aos="zoom-out"
-              className="flex flex-col md:flex-row items-center gap-8 bg-white rounded-2xl p-3 shadow-md shadow-lime-500 hover:shadow-lg hover:shadow-lime-500 transition duration-300 border border-lime-500"
+              data-aos="zoom-in-up"
+              className="flex flex-col md:flex-row items-center gap-8 bg-white rounded-2xl p-3 mx-1 shadow-md shadow-lime-500 hover:shadow-lg hover:shadow-lime-500 transition duration-300 border border-lime-500"
             >
               <img
                 src={project.image}

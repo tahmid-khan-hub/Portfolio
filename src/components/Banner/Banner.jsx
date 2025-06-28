@@ -15,7 +15,7 @@ const Banner = () => {
     });
   }, []);
   return (
-    <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-24 py-16">
+    <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-24 py-24">
       {/* Left Side: Text */}
       <div className="flex-1 ml-0 md:ml-2" data-aos="fade-right">
         <h1
