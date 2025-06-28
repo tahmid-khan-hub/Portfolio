@@ -8,6 +8,7 @@ import HomeLayout from "./layout/HomeLayout.jsx";
 import Home from "./components/Home/Home.jsx";
 import Resume from "./pages/Resume/Resume.jsx";
 import ErrorPage from "./pages/Error/Error.jsx";
+import ProjectsDetails from "./pages/Projects/ProjectsDetails.jsx";
 
 const router = createBrowserRouter([
   {
@@ -21,8 +22,8 @@ const router = createBrowserRouter([
     ],
   },
   {
-    path: "resume",
-    element: <Resume></Resume>,
+    path: "projectsDetails/:id",
+    element: <ProjectsDetails></ProjectsDetails>
   },
   {
     path: "*",
