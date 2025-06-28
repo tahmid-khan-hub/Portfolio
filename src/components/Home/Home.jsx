@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Banner from "../Banner/Banner";
 import About from "../../pages/About/About";
 import Skills from "../../pages/Skills/Skills";
@@ -6,6 +6,7 @@ import Projects from "../../pages/Projects/Projects";
 import Contact from "../../pages/Contact/Contact";
 
 const Home = () => {
+  useEffect(()=>{document.title = "Portfolio"},[])
   return (
     <div className="overflow-x-hidden">
       <div id="banner">
