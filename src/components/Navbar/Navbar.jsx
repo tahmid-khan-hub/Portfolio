@@ -24,6 +24,11 @@ const Navbar = () => {
         </a>
       </li>
       <li>
+        <a className="mr-4 font-semibold hover:bg-lime-500 hover:text-black" href="#education">
+          Education
+        </a>
+      </li>
+      <li>
         <a className="mr-4 font-semibold hover:bg-lime-500 hover:text-black" href="#projects">
           Projects
         </a>

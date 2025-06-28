@@ -4,6 +4,7 @@ import About from "../../pages/About/About";
 import Skills from "../../pages/Skills/Skills";
 import Projects from "../../pages/Projects/Projects";
 import Contact from "../../pages/Contact/Contact";
+import Education from "../../pages/Education/Education";
 
 const Home = () => {
   useEffect(()=>{document.title = "Portfolio"},[])
@@ -17,6 +18,9 @@ const Home = () => {
       </div>
       <div id="skills">
         <Skills />
+      </div>
+      <div id="education">
+        <Education />
       </div>
       <div id="projects">
         <Projects />
