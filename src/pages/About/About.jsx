@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import Lottie from "lottie-react";
-import devAnimation from "../../assets/LottieFiles/developer2.json";
+import devAnimation from "../../assets/LottieFiles/dev.json";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -30,7 +30,12 @@ const About = () => {
           <p data-aos="fade-left" className="text-lg leading-relaxed">
             I'm a passionate{" "}
             <span className="font-bold">MERN stack developer</span> who loves
-            building efficient, scalable, and modern web applications...
+            building efficient, scalable, and modern web applications.
+          </p>
+          <p data-aos="fade-left" className="text-lg -mt-6">
+            Currently, I'm pursuing a degree in{" "}
+            <span className="font-bold">Computer Science & Engineering</span> at{" "}
+            <span className="font-bold">Metropolitan University</span>, located in <span className="font-bold">Sylhet, Bangladesh</span>.
           </p>
           <p data-aos="fade-left" className="text-lg">
             I enjoy solving complex problems and continuously learning...

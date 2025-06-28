@@ -7,7 +7,7 @@ import Contact from "../../pages/Contact/Contact";
 
 const Home = () => {
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <div id="banner">
         <Banner />
       </div>
