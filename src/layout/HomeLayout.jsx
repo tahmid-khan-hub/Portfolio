@@ -7,7 +7,7 @@ import Home from '../components/Home/Home';
 
 const HomeLayout = () => {
     return (
-            <div className='w-11/12 md:max-w-[1300px] mx-auto'>
+            <div className='w-[95%] md:max-w-[1500px] mx-auto'>
                 <Navbar></Navbar>
                 <Home></Home>
                 <Outlet></Outlet>

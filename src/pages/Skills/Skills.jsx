@@ -85,7 +85,7 @@ const Skills = () => {
     AOS.refresh();
   }, []);
   return (
-    <section className="py-16 px-4 max-w-6xl mx-auto">
+    <section className="py-16">
       <div className="text-center mb-12">
         <h2 className="text-4xl font-bold text-lime-500">My Skills</h2>
         <p className="text-gray-600 dark:text-gray-400 mt-4 max-w-2xl mx-auto">

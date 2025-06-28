@@ -46,7 +46,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="px-4 py-20 md:px-2 text-gray-500">
+    <section id="contact" className=" py-20 text-gray-500">
       <h2 className="text-4xl text-center text-lime-500 font-bold mb-6">
         Get in Touch
       </h2>
@@ -55,7 +55,7 @@ const Contact = () => {
         I'd love to hear from you.
       </p>
 
-      <div className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-12">
+      <div className="flex flex-col lg:flex-row gap-12">
         {/* Left: Contact Info */}
         <div className="lg:w-1/2 bg-lime-100 p-8 rounded-2xl border border-gray-300 shadow">
           <h3 className="text-2xl font-semibold mb-12 text-lime-600">

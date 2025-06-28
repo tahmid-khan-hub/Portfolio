@@ -50,8 +50,8 @@ const Projects = () => {
   }, []);
 
   return (
-    <section id="projects" className="py-20 px-4 text-gray-800 ">
-      <div className="max-w-6xl mx-auto">
+    <section id="projects" className="py-20 my-24 text-gray-800 ">
+      <div className="">
         <h2 className="text-4xl font-bold text-center text-lime-500 mb-16">
           My Projects
         </h2>
@@ -60,7 +60,6 @@ const Projects = () => {
           {projects.map((project, index) => (
             <motion.div
               key={index}
-              whileHover={{ scale: 1.05 }}
               data-aos="zoom-out"
               className="flex flex-col md:flex-row items-center gap-8 bg-white rounded-2xl p-3 shadow-md shadow-lime-500 hover:shadow-lg hover:shadow-lime-500 transition duration-300 border border-lime-500"
             >

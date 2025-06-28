@@ -12,8 +12,8 @@ const About = () => {
     });
   }, []);
   return (
-    <section id="about" className="w-full overflow-x-hidden px-4 sm:px-6 py-16">
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 items-center gap-10">
+    <section id="about" className="w-full overflow-x-hidden py-16">
+      <div className=" grid md:grid-cols-2 items-center gap-10">
         {/* Animation */}
         <div className="w-full">
           <Lottie animationData={devAnimation} loop={true} />

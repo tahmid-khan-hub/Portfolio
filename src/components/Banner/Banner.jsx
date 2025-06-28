@@ -15,9 +15,9 @@ const Banner = () => {
     });
   }, []);
   return (
-    <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-10 py-16">
+    <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-24 py-16">
       {/* Left Side: Text */}
-      <div className="flex-1 ml-0 md:ml-11" data-aos="fade-right">
+      <div className="flex-1 ml-0 md:ml-2" data-aos="fade-right">
         <h1
           data-aos="fade-right"
           className="text-4xl md:text-6xl font-bold mb-4 text-center md:text-left"
@@ -49,7 +49,7 @@ const Banner = () => {
           I'm a university student who builds responsive and user-friendly websites using modern web technologies.
         </p>
 
-        <div className="flex mb-3">
+        <div className="flex justify-center items-center md:justify-start mb-3">
           <a href="https://github.com/tahmid-khan-hub" target="_blank"><FaGithub size={35} /></a>
           <a href="https://www.facebook.com/tahmid.khan.35762241" target="_blank"><FaFacebook className="text-blue-500 ml-3" size={35}/></a>
         </div>
