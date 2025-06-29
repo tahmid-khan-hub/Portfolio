@@ -33,7 +33,7 @@ const projects = [
     title: "RecipeBook",
     image: "https://i.ibb.co/v6d1rKdF/image.png",
     description: "RecipeBook brings delicious recipes to your fingertips, making cooking easy and fun for everyone. Explore a wide range of recipes with step-by-step instructions and beautiful visuals.",
-    url: "https://amazing-crepe-4d717c.netlify.app",
+    url: "https://comforting-pasca-4e92c6.netlify.app/",
     fea1: "Create, edit, and organize personal recipes",
     fea2: "Explore shared recipes from other users",
     fea3: "Like your favorite dishes",
