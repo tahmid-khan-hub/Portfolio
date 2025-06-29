@@ -7,7 +7,7 @@ import { Link } from "react-router";
 const projects = [
   {
     title: "NexUScore",
-    image: "https://i.ibb.co/GQNr15J2/image.png",
+    image: "https://i.ibb.co/sdkNqSz6/image.png",
     description: "NexUSCore is an educational platform where users can explore and enroll in a variety of courses. Enroll in your desired courses and level up your skills on your schedule.",
     url: "https://effervescent-centaur-5a4b64.netlify.app",
     fea1: "Access the most popular and newly added courses",

@@ -1,14 +1,13 @@
 [
   {
     "title": "NexUScore",
-    "image": "https://i.ibb.co/GQNr15J2/image.png",
-    "description": "NexUSCore is a modern educational platform where users can explore and enroll in a wide variety of courses. Designed for flexibility and ease, learners can level up their skills at their own pace. It features dynamic course discovery, personalized dashboards, and secure authentication. The platform is fully responsive and optimized for both students and instructors.",
+    "image": "https://i.ibb.co/sdkNqSz6/image.png",
+    "description": "NexUSCore is a modern educational platform where users can explore and enroll in a wide variety of courses. Designed for flexibility and ease, learners can level up their skills at their own pace. It features dynamic course discovery and secure authentication. The platform is fully responsive and optimized for both students and instructors.",
     "fea1": "Access the most popular and newly added courses",
     "fea2": "Easily explore courses by topic or interest",
     "fea3": "Track your progress and manage all your enrolled courses",
-    "fea4": "Role-based dashboard for admin and students",
+    "fea4": "Role-based for admin and students",
     "fea5": "Authentication with JWT and Firebase",
-    "fea6": "Responsive design with optimized user experience",
     "technologies": [
       "React",
       "Tailwind",
@@ -20,30 +19,22 @@
       "Node.js",
       "Express"
     ],
-    "challenges": "Implementing secure role-based access control and managing real-time updates with Firebase were technically challenging.",
-    "whatILearned": "Gained deep understanding of React Router, JWT authentication flow, and efficient database querying in MongoDB.",
+    "challenges": "Applying JWT-based authentication and protecting routes securely was a major challenge, especially while handling token expiration and user role verification.",
+    "whatILearned": "Gained deep understanding of JWT authentication flow, and efficient database querying in MongoDB.",
     "futurePlans": "Add real-time messaging between instructors and students, and implement progress-based certificates."
   },
   {
     "title": "EventExplorar",
     "image": "https://i.ibb.co/6jJhcgC/image.png",
-    "description": "EventExplorar is your ultimate event discovery platform. Whether it's workshops, festivals, or tech meetups, users can stay informed and engaged with the latest events. The site supports bookmarking and dynamic filtering based on interests. It is built with a focus on interactivity, smooth animations, and mobile-first design.",
+    "description": "EventExplorar is your ultimate event discovery platform. Whether it's workshops, festivals, or tech meetups, users can stay informed and engaged with the latest events. Users can book seats for events and manage their enrolled sessions. It is built with a focus on interactivity, smooth animations, and mobile-first design.",
     "fea1": "Find events across various categories",
     "fea2": "View full event descriptions, schedules and locations",
     "fea3": "Keep track of your booked events",
-    "fea4": "Search and filter events by tags or locations",
-    "fea5": "Add events to your favorites/bookmarks",
-    "fea6": "Firebase-based secure login system",
-    "technologies": [
-      "React",
-      "Tailwind",
-      "JavaScript",
-      "CSS",
-      "Firebase"
-    ],
-    "challenges": "Handling time-zone-based event sorting and calendar-based filtering was tricky during development.",
-    "whatILearned": "Improved state management and learned best practices for filtering, searching, and handling user input.",
-    "futurePlans": "Plan to integrate Google Maps for venue visualization and allow users to submit their own events."
+    "fea4": "Firebase-based secure login system",
+    "technologies": ["React", "Tailwind", "JavaScript", "CSS", "Firebase"],
+    "challenges": "Implementing Firebase authentication and integrating it with route protection and user state management was challenging, especially for first-time setup.",
+    "whatILearned": "I learned how to set up Firebase Auth in React, manage user login/logout state, and secure access to protected components.",
+    "futurePlans": "In the future, I plan to add a role-based dashboard where users and organizers can manage events, view bookings, and post their own events."
   },
   {
     "title": "RecipeBook",
@@ -52,9 +43,8 @@
     "fea1": "Create, edit, and organize personal recipes",
     "fea2": "Explore shared recipes from other users",
     "fea3": "Like your favorite dishes",
-    "fea4": "Dynamic dashboard with user/admin roles",
-    "fea5": "Recipe filtering and search support",
-    "fea6": "Responsive card-based layout with animations",
+    "fea4": "Dashboard interface to view and manage your recipes",
+    "fea5": "Filter recipes based on cuisine and popularity",
     "technologies": [
       "React",
       "Tailwind",
@@ -65,8 +55,8 @@
       "Node.js",
       "Express"
     ],
-    "challenges": "One challenge was ensuring data consistency between different user roles and managing image uploads efficiently.",
-    "whatILearned": "Learned dashboard structuring, backend data validation, and optimized Firebase file handling.",
+    "challenges": "The main challenge was building the backend and dashboard from scratch for the first time, especially setting up routes, database operations, and state handling.",
+    "whatILearned": "I learned how to structure a full-stack project with a backend using Node.js and Express, and how to build a functional dashboard in React connected to the database.",
     "futurePlans": "Introduce comment sections, ratings, and export-to-PDF functionality for recipes."
   }
 ]

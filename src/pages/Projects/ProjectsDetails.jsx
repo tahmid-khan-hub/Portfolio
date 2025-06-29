@@ -15,15 +15,17 @@ const ProjectsDetails = () => {
       });
   }, [id]);
 
-  if (!project) return <div className="text-center mt-20 text-xl">Loading...</div>;
+  if (!project) {
+    return <div className="text-center mt-20 text-xl"><span className="loading loading-spinner text-success"></span></div>;
+  }
 
   return (
-    <div className="w-[95%] md:max-w-[1200px] mx-auto mt-8 mb-12 px-4">
-      <button onClick={() => navigate(-1)} className="btn btn-outline mb-6">
+    <div className="w-[95%] md:max-w-[1460px] mx-auto mt-8 mb-12">
+      <button onClick={() => navigate(-1)} className="btn bg-gradient-to-r from-lime-400 via-lime-500 to-lime-500 hover:bg-gradient-to-l hover:from-lime-300 hover:via-lime-400 hover:to-lime-400 border-2 border-lime-300 mb-6">
         ← Back
       </button>
 
-      <div className="bg-base-100 p-6 rounded-2xl shadow-xl">
+      <div className="bg-lime-100 border border-gray-400 p-6 rounded-xl shadow-xl">
         {/* Title */}
         <h1 className="text-3xl font-bold mb-4 text-center">{project.title}</h1>
 
@@ -31,11 +33,12 @@ const ProjectsDetails = () => {
         <img
           src={project.image}
           alt={project.title}
-          className="w-full rounded-lg mb-6 shadow-lg"
+          className="w-full h-[210px] md:h-[320px] lg:h-[540px] object-cover rounded-lg mb-6 shadow-lg"
         />
 
         {/* Description */}
-        <p className="text-lg mb-6 text-gray-700">{project.description}</p>
+        <h2 className="text-xl font-semibold -ml-1 mb-2">📄 Description:</h2>
+        <p className="text-lg mb-6 text-gray-800">{project.description}</p>
 
         {/* Features */}
         <div className="mb-6">
@@ -51,7 +54,7 @@ const ProjectsDetails = () => {
 
         {/* Tech Stack */}
         <div className="mb-6">
-          <h2 className="text-xl font-semibold mb-2">💻 Technologies Used:</h2>
+          <h2 className="text-xl font-semibold mb-4">💻 Technologies Used:</h2>
           <div className="flex flex-wrap gap-2">
             {project.technologies.map((tech, idx) => (
               <span
@@ -66,24 +69,23 @@ const ProjectsDetails = () => {
 
         {/* Challenges */}
         <div className="mb-6">
-          <h2 className="text-xl font-semibold mb-2">🚧 Challenges Faced:</h2>
-          <p className="text-gray-700">{project.challenges}</p>
+          <h2 className="text-xl font-semibold mb-2">🚧 Challenges I Faced:</h2>
+          <p className="text-gray-800">{project.challenges}</p>
         </div>
 
         {/* What I Learned */}
         <div className="mb-6">
           <h2 className="text-xl font-semibold mb-2">📘 What I Learned:</h2>
-          <p className="text-gray-700">{project.whatILearned}</p>
+          <p className="text-gray-800">{project.whatILearned}</p>
         </div>
 
         {/* Future Plans */}
         <div>
           <h2 className="text-xl font-semibold mb-2">🚀 Future Plans:</h2>
-          <p className="text-gray-700">{project.futurePlans}</p>
+          <p className="text-gray-800">{project.futurePlans}</p>
         </div>
       </div>
     </div>
   );
 };
-
-export default ProjectsDetails;
+export default ProjectsDetails; 
