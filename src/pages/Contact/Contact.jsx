@@ -47,6 +47,7 @@ const Contact = () => {
       );
   };
   useEffect(() => {
+    emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
     AOS.init({
       duration: 1000,
       once: false,
