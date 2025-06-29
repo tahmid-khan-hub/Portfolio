@@ -36,7 +36,7 @@ const projects = [
     url: "https://comforting-pasca-4e92c6.netlify.app/",
     fea1: "Create, edit, and organize personal recipes",
     fea2: "Explore shared recipes from other users",
-    fea3: "Like your favorite dishes",
+    fea3: "Like your favorite recipes",
     technologies: [
       "React","Tailwind","CSS", "JavaScript", "MongoDB","Firebase","Node.js","Express",
     ],
@@ -81,13 +81,13 @@ const Projects = () => {
                 <h3 className="text-2xl font-bold text-gray-800">
                   {project.title}
                 </h3>
-                <p>{project.description}</p>
-                <div>
+                <p className="px-3 md:px-1 lg:px-0">{project.description}</p>
+                <div className="font-semibold text-left ml-2 md:ml-1 lg:ml-0">
                   <li>{project.fea1}</li>
                   <li>{project.fea2}</li>
                   <li>{project.fea3}</li>
                 </div>
-                <p className="text-sm text-gray-600 font-medium">
+                <p className="text-sm text-gray-600 font-medium mt-3 md:mt-1 lg:mt-0">
                   Technologies:
                 </p>
                 <ul className="flex flex-wrap justify-center md:justify-start gap-2 text-sm">
@@ -101,7 +101,7 @@ const Projects = () => {
                   ))}
                 </ul>
 
-                <div className="flex gap-8">
+                <div className="grid grid-cols-4 md:grid-cols-2 lg:grid-cols-4 gap-2 md:gap-5 lg:gap-8">
                   <motion.a
                   href={project.url}
                   target="_blank"
@@ -117,7 +117,7 @@ const Projects = () => {
                   whileHover={{scale: 1.05}}
                   className="inline-block rounded-xl py-2 my-4 btn bg-gradient-to-r from-lime-400 via-lime-500 to-lime-500 hover:bg-gradient-to-l hover:from-lime-300 hover:via-lime-400 hover:to-lime-400 border-2 border-lime-300"
                   >
-                    GitHub Client
+                    Client
                   </motion.a>
 
                   {
@@ -127,16 +127,16 @@ const Projects = () => {
                       whileHover={{scale: 1.05}}
                       className="inline-block rounded-xl py-2 my-4 btn bg-gradient-to-r from-lime-400 via-lime-500 to-lime-500 hover:bg-gradient-to-l hover:from-lime-300 hover:via-lime-400 hover:to-lime-400 border-2 border-lime-300"
                       >
-                        GitHub Server
+                        Server
                       </motion.a>
                   }
 
-                  <Link to={`projectsDetails/${index}`}><motion.a
+                  <motion.a
                   whileHover={{scale: 1.05}}
                   className="inline-block rounded-xl py-2 my-4 btn bg-gradient-to-r from-lime-400 via-lime-500 to-lime-500 hover:bg-gradient-to-l hover:from-lime-300 hover:via-lime-400 hover:to-lime-400 border-2 border-lime-300"
-                  >
-                    View Details
-                  </motion.a></Link>
+                  ><Link to={`projectsDetails/${index}`}>
+                    Details
+                  </Link></motion.a>
                 </div>
               </div>
             </motion.div>
