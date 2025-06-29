@@ -1,12 +1,54 @@
-# React + Vite
+# 👤 Tahmid's Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio website, built with modern web technologies to showcase my work, skills, and background as a MERN-stack developer.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## About This Project
 
-## Expanding the ESLint configuration
+This is a fully responsive portfolio website designed to introduce myself, display my technical skills, and highlight the projects I've built using the MERN stack. The site is built using **React**, styled with **Tailwind CSS**, and hosted on **Netlify**.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📁 Sections
+
+### 🚀 Banner & Navbar
+- Clean, minimal sticky navigation bar
+- Dynamic banner introducing me with animated typing effect
+
+### 👤 About Me
+- A short description of my background, passion, and journey in web development
+
+### 🛠️ Skills
+- Lists my core technologies including React, Node.js, MongoDB, Firebase, and more
+
+### 🎓 Education
+- Displays my academic background with degree and university information
+
+### 💼 Projects
+- Highlights selected projects with dynamic routing to detailed views
+- Each project includes description, features, tech stack, challenges, and future plans
+
+### 📬 Contact
+- Users can reach out to me via a contact form
+- Integrated with **EmailJS** to send messages directly to my inbox
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** React.js, JavaScript, CSS, Tailwind CSS 
+- **Deployment:** Netlify  
+- **Others:** EmailJS for form submission
+
+---
+
+## 📸 Live Demo
+
+🔗 [Visit Portfolio Website](https://chic-cendol-40782e.netlify.app/)
+
+---
+
+## Contact
+
+tahmidkhan0011@gmail.com
