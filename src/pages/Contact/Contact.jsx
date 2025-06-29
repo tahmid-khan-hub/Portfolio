@@ -54,7 +54,7 @@ const Contact = () => {
   }, []);
 
   return (
-    <section id="contact" className=" py-20 text-gray-500">
+    <section id="contact" className=" py-20 text-gray-800">
       <h2 className="text-4xl text-center text-lime-500 font-bold mb-12">
         Get in Touch
       </h2>
@@ -69,14 +69,14 @@ const Contact = () => {
           <div className="bg-lime-200 pb-24 pt-12 pl-3 rounded-xl">
             <div className="flex items-center gap-4 mb-5">
               <FaEnvelope className="text-lime-500 text-xl" />
-              <a href="tahmidkhan0011@gmail.com" className="hover:underline">
+              <a className="hover:underline">
                 tahmidkhan0011@gmail.com
               </a>
             </div>
 
             <div className="flex items-center gap-4 mb-5">
               <FaPhoneAlt className="text-lime-500 text-xl" />
-              <a href="tel:+8801610627131" className="hover:underline">
+              <a className="hover:underline">
                 +880 1610627131
               </a>
             </div>

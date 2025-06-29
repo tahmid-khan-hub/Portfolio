@@ -10,7 +10,7 @@ const Education = () => {
     });
   }, []);
   return (
-    <div className="space-y-3 py-24 mt-1  text-gray-600">
+    <div className="space-y-3 py-24 mt-1 text-gray-800">
       <h2 className="text-4xl text-center sm:text-4xl font-bold text-lime-500 dark:text-lime-400 mb-11">
         Education
       </h2>

@@ -39,12 +39,12 @@ const Banner = () => {
           wrapper="h2"
           speed={50}
           repeat={Infinity}
-          className="text-2xl md:text-4xl text-gray-500 mb-6 text-center md:text-left"
+          className="text-2xl md:text-4xl text-gray-800 mb-6 text-center md:text-left"
         />
 
         <p
           data-aos="fade-right"
-          className="text-base md:text-lg text-gray-500 mb-3 max-w-xl text-center md:text-left"
+          className="text-base md:text-lg text-gray-800 mb-3 max-w-xl text-center md:text-left"
         >
           I'm a university student who builds responsive and user-friendly websites using modern web technologies.
         </p>

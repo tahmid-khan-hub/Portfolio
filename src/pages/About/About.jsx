@@ -20,7 +20,7 @@ const About = () => {
         </div>
 
         {/* Text Content */}
-        <div className="space-y-6 text-gray-600 px-1">
+        <div className="space-y-6 text-gray-800 px-1">
           <h2
             data-aos="fade-left"
             className="text-3xl sm:text-4xl font-bold text-lime-600 dark:text-lime-400 text-center md:text-left"
