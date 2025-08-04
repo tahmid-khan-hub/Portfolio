@@ -174,12 +174,12 @@ const Projects = () => {
                     </motion.a>
                   )}
 
-                  <motion.a
+                  <Link className="inline-block rounded-xl py-2 my-4 btn bg-gradient-to-r from-lime-400 via-lime-500 to-lime-500 hover:bg-gradient-to-l hover:from-lime-300 hover:via-lime-400 hover:to-lime-400 border-2 border-lime-300" to={`projectsDetails/${index}`}><motion.a
                     whileHover={{ scale: 1.05 }}
-                    className="inline-block rounded-xl py-2 my-4 btn bg-gradient-to-r from-lime-400 via-lime-500 to-lime-500 hover:bg-gradient-to-l hover:from-lime-300 hover:via-lime-400 hover:to-lime-400 border-2 border-lime-300"
+                    
                   >
-                    <Link to={`projectsDetails/${index}`}>Details</Link>
-                  </motion.a>
+                    Details
+                  </motion.a></Link>
                 </div>
               </div>
             </motion.div>
