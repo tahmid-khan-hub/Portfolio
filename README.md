@@ -45,7 +45,7 @@ This is a fully responsive portfolio website designed to introduce myself, displ
 
 ## 📸 Live Demo
 
-🔗 [Visit Portfolio Website](https://chic-cendol-40782e.netlify.app/)
+🔗 [Visit Portfolio Website](https://tourmaline-brigadeiros-52f0c0.netlify.app/)
 
 ---
 
