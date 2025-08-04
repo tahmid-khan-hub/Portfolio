@@ -7,11 +7,13 @@ import Home from '../components/Home/Home';
 
 const HomeLayout = () => {
     return (
-            <div className='w-[95%] md:max-w-[1500px] mx-auto'>
-                <Navbar></Navbar>
+            <>
+            <Navbar></Navbar>
+            <div className='w-[95%] max-w-[1500px] mx-auto'>
                 <Home></Home>
                 <Outlet></Outlet>
             </div>
+            </>
     );
 };
 

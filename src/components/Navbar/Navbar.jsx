@@ -1,5 +1,4 @@
 import React from "react";
-import { FiSun, FiMoon } from "react-icons/fi";
 import "./Navbar.css";
 import { Link } from "react-router";
 import { motion } from "framer-motion";
@@ -42,9 +41,10 @@ const Navbar = () => {
 
   return (
     <div className="navbar sticky top-0 z-50 bg-lime-50 text-lime-600">
-      <div className="navbar-start">
+      <div className="max-w-[1500px] w-[95%] mx-auto flex justify-between items-center">
+        <div className="navbar-start">
         <div className="dropdown">
-          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+          <div tabIndex={0} role="button" className="mr-3 lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -76,6 +76,7 @@ const Navbar = () => {
        <Link to="resume"><motion.a whileHover={{scale: 1.05}} className="btn bg-gradient-to-r from-lime-400 via-lime-500 to-lime-500 hover:bg-gradient-to-l hover:from-lime-300 hover:via-lime-400 hover:to-lime-400 border-2 border-lime-300 ml-2">
           Resume
         </motion.a></Link>
+      </div>
       </div>
     </div>
   );
