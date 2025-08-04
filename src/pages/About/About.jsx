@@ -30,7 +30,7 @@ const About = () => {
           <p data-aos="fade-left" className="text-lg leading-relaxed">
             I'm a passionate{" "}
             <span className="font-bold">MERN stack developer</span> who loves
-            building efficient, scalable, and modern web applications.
+            building efficient, scalable and modern web applications.
           </p>
           <p data-aos="fade-left" className="text-lg -mt-6">
             Currently, I'm pursuing a degree in{" "}
@@ -38,11 +38,11 @@ const About = () => {
             <span className="font-bold">Metropolitan University</span>, located in <span className="font-bold">Sylhet, Bangladesh</span>.
           </p>
           <p data-aos="fade-left" className="text-lg">
-            I enjoy solving complex problems and continuously learning...
+            I love problem solving and continuously learning...
           </p>
           <ul data-aos="fade-left" className="list-disc list-inside text-base">
             <li>
-              Built <strong className="font-bold">3 full-stack MERN</strong>{" "}
+              Built <strong className="font-bold">3 full-stack</strong>{" "}
               projects
             </li>
             <li>
@@ -52,7 +52,7 @@ const About = () => {
               </strong>
             </li>
             <li>
-              Strong{" "}
+              Developing{" "}
               <strong className="font-bold">problem-solving skills</strong>
             </li>
           </ul>
