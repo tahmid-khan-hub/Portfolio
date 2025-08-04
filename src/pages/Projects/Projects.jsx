@@ -17,7 +17,7 @@ const projects = [
     ],
     description:
       "NexUSCore is an educational platform where users can explore and enroll in a variety of courses. Enroll in your desired courses and level up your skills on your schedule.",
-    url: "https://effervescent-centaur-5a4b64.netlify.app",
+    url: "https://nexuscore-app.netlify.app",
     fea1: "Access the most popular and newly added courses",
     fea2: "Easily explore courses by topic or interest",
     fea3: "Track your progress and manage all your enrolled courses",
