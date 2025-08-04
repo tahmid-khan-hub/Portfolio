@@ -4,7 +4,7 @@ import { TypeAnimation } from "react-type-animation";
 import profileImg from "../../assets/myImage.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 
 const Banner = () => {
@@ -52,7 +52,7 @@ const Banner = () => {
 
         <div>
           <p className="mb-3 text-center md:text-left">
-           My goal is to grow into a well-rounded software engineer by strengthening my backend skills, exploring DevOps, and building scalable, real-world applications.
+           My goal is to become a software engineer, exploring Next.js,  building scalable and modern applications.
           </p>
         </div>
 
@@ -66,10 +66,17 @@ const Banner = () => {
           >
             <FaFacebook className="text-blue-500 ml-3" size={35} />
           </a>
+          <a 
+            href="https://www.linkedin.com/in/tahmid-khan-"
+            target="_blank"
+          >
+            <FaLinkedin className="text-blue-600 ml-3" size={35} />
+          </a>
         </div>
 
         <div className="flex justify-center items-center gap-4  md:justify-start">
           <motion.a
+            href="#contact"
             whileHover={{ scale: 1.05 }}
             className="btn bg-gradient-to-r from-lime-400 via-lime-500 to-lime-500 hover:bg-gradient-to-l hover:from-lime-300 hover:via-lime-400 hover:to-lime-400 border-2 border-lime-300"
           >
@@ -78,6 +85,8 @@ const Banner = () => {
 
           <motion.a
             whileHover={{ scale: 1.05 }}
+            href="/resume.pdf"
+            download="Tahmid Khan MERN Stack Developer Resume.pdf"
             className="btn bg-gradient-to-r from-lime-400 via-lime-500 to-lime-500 hover:bg-gradient-to-l hover:from-lime-300 hover:via-lime-400 hover:to-lime-400 border-2 border-lime-300"
           >
             Download Resume
