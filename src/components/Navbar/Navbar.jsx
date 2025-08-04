@@ -1,6 +1,5 @@
 import React from "react";
 import "./Navbar.css";
-import { Link } from "react-router";
 import { motion } from "framer-motion";
 import brand from "../../assets/ownBrand.png"
 
@@ -73,9 +72,13 @@ const Navbar = () => {
       </div>
       <div className="navbar-end">
         
-       <Link to="resume"><motion.a whileHover={{scale: 1.05}} className="btn bg-gradient-to-r from-lime-400 via-lime-500 to-lime-500 hover:bg-gradient-to-l hover:from-lime-300 hover:via-lime-400 hover:to-lime-400 border-2 border-lime-300 ml-2">
+       <motion.a whileHover={{scale: 1.05}} 
+       href="https://drive.google.com/file/d/1Qr-a_rLSk7Pn42RyoX_sl9u1UFKnIG1x/view"
+       target="_blank"
+       rel="noopener noreferrer"
+       className="btn bg-gradient-to-r from-lime-400 via-lime-500 to-lime-500 hover:bg-gradient-to-l hover:from-lime-300 hover:via-lime-400 hover:to-lime-400 border-2 border-lime-300 ml-2">
           Resume
-        </motion.a></Link>
+      </motion.a>
       </div>
       </div>
     </div>
