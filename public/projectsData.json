@@ -1,5 +1,38 @@
 [
   {
+    "title": "ThreadQube",
+    "image": [
+      "https://i.ibb.co.com/rKWWk7Fr/thread-banner.png",
+      "https://i.ibb.co.com/xSwrqGqh/thread-dashboard.png",
+      "https://i.ibb.co.com/ZpKqqZGy/thread-manage-User.png"
+    ],
+    "description": "ThreadQube is a modern MERN-stack forum platform that fosters community interaction through posts, comments, reactions and announcements. It balances user engagement with strong admin controls, creating a safe and dynamic space for meaningful discussions.",
+    "fea1": "User can create and delete posts",
+    "fea2": "Like, dislike and comment on discussions",
+    "fea3": "Update personal details and change passwords",
+    "fea4": "Unlock premium benefits with secure Stripe integration",
+    "fea5": "Admin Announcements – Platform-wide updates & notifications",
+    "fea6": "User Management – Role assignment, promotions and moderation",
+    "fea7": "User can Report on inappropriate content & send feedback",
+    "fea8": "Admin can manage terms & policies, social links and profile settings",
+    "technologies":[
+      "React.js",
+      "Tailwind",
+      "CSS",
+      "JavaScript",
+      "MongoDB",
+      "Firebase",
+      "JWT Token",
+      "Node.js",
+      "Express.js",
+      "Tan Stack Query",
+      "React hook form"
+    ],
+    "challenges": "Handling complex MongoDB Aggregation Pipelines for advanced queries was challenging, especially in filtering and managing large datasets.",
+    "whatILearned": "Improved skills in MongoDB aggregation for data analysis. Learned to integrate Stripe payment securely for subscriptions. Enhanced understanding of scalable admin dashboards & user moderation systems.",
+    "futurePlans": "Track revenue from membership subscriptions in the admin dashboard. Premium users gain extended privileges such as editing posts. Real-time notifications for comments and likes"
+  },
+  {
     "title": "NexUScore",
     "image":  [
       "https://i.ibb.co/sdkNqSz6/image.png",
@@ -13,7 +46,7 @@
     "fea4": "Role-based for admin and students",
     "fea5": "Authentication with JWT and Firebase",
     "technologies": [
-      "React",
+      "React.js",
       "Tailwind",
       "CSS",
       "JavaScript",
@@ -21,7 +54,7 @@
       "Firebase",
       "JWT Token",
       "Node.js",
-      "Express"
+      "Express.js"
     ],
     "challenges": "Applying JWT-based authentication and protecting routes securely was a major challenge, especially while handling token expiration and user role verification.",
     "whatILearned": "Gained deep understanding of JWT authentication flow, and efficient database querying in MongoDB.",
@@ -39,7 +72,7 @@
     "fea2": "View full event descriptions, schedules and locations",
     "fea3": "Keep track of your booked events",
     "fea4": "Firebase-based secure login system",
-    "technologies": ["React", "Tailwind", "JavaScript", "CSS", "Firebase"],
+    "technologies": ["React.js", "Tailwind", "JavaScript", "CSS", "Firebase"],
     "challenges": "Implementing Firebase authentication and integrating it with route protection and user state management was challenging, especially for first-time setup.",
     "whatILearned": "I learned how to set up Firebase Auth in React, manage user login/logout state, and secure access to protected components.",
     "futurePlans": "In the future, I plan to add a role-based dashboard where users and organizers can manage events, view bookings, and post their own events."
@@ -58,14 +91,14 @@
     "fea4": "Dashboard interface to view and manage your recipes",
     "fea5": "Filter recipes based on cuisine and popularity",
     "technologies": [
-      "React",
+      "React.js",
       "Tailwind",
       "CSS",
       "JavaScript",
       "MongoDB",
       "Firebase",
       "Node.js",
-      "Express"
+      "Express.js"
     ],
     "challenges": "The main challenge was building the backend and dashboard from scratch for the first time, especially setting up routes, database operations, and state handling.",
     "whatILearned": "I learned how to structure a full-stack project with a backend using Node.js and Express, and how to build a functional dashboard in React connected to the database.",
