@@ -9,6 +9,36 @@ import "swiper/css";
 
 const projects = [
   {
+    title: "ThreadQube",
+    images: [
+      "https://i.ibb.co.com/rKWWk7Fr/thread-banner.png",
+      "https://i.ibb.co.com/xSwrqGqh/thread-dashboard.png",
+      "https://i.ibb.co.com/ZpKqqZGy/thread-manage-User.png",
+    ],
+    description:
+      "ThreadQube is a MERN-based forum that lets users share and engage with posts, with premium options and clear admin management. It supports easy discussions while keeping the community connected and moderated.",
+    url: "https://thread-qube-app.netlify.app",
+    fea1: "Users can create, delete and interact with posts by liking, disliking and commenting.",
+    fea2: "Unlock extended posting limits and extra features through secure payment.",
+    fea3: "Admins can manage announcements, user roles and platform policies to keep the forum organized.",
+    technologies: [
+      "React.js",
+      "Tailwind",
+      "CSS",
+      "JavaScript",
+      "MongoDB",
+      "Firebase",
+      "JWT Token",
+      "Node.js",
+      "Express.js",
+      "Stripe",
+      "Tan Stack Query",
+      "React hook form",
+    ],
+    gitHub_client: "https://github.com/tahmid-khan-hub/Thread-Qube",
+    gitHub_server: "https://github.com/tahmid-khan-hub/Thread-Qube-Server",
+  },
+  {
     title: "NexUScore",
     images: [
       "https://i.ibb.co/sdkNqSz6/image.png",
@@ -22,7 +52,7 @@ const projects = [
     fea2: "Easily explore courses by topic or interest",
     fea3: "Track your progress and manage all your enrolled courses",
     technologies: [
-      "React",
+      "React.js",
       "Tailwind",
       "CSS",
       "JavaScript",
@@ -30,11 +60,13 @@ const projects = [
       "Firebase",
       "JWT Token",
       "Node.js",
-      "Express",
+      "Express.js",
+      "Stripe",
     ],
     gitHub_server: "https://github.com/tahmid-khan-hub/NexUsCore-server",
     gitHub_client: "https://github.com/tahmid-khan-hub/Nexus-Core",
   },
+
   {
     title: "EventExplorar",
     images: [
@@ -48,7 +80,7 @@ const projects = [
     fea1: "Find events across various categories",
     fea2: "View full event descriptions, schedules and locations",
     fea3: "Keep track of your booked events",
-    technologies: ["React", "Tailwind", "JavaScript", "CSS", "Firebase"],
+    technologies: ["React.js", "Tailwind", "JavaScript", "CSS", "Firebase"],
     gitHub_client: "https://github.com/tahmid-khan-hub/Event-Explorar",
   },
   {
@@ -65,14 +97,14 @@ const projects = [
     fea2: "Explore shared recipes from other users",
     fea3: "Like your favorite recipes",
     technologies: [
-      "React",
+      "React.js",
       "Tailwind",
       "CSS",
       "JavaScript",
       "MongoDB",
       "Firebase",
       "Node.js",
-      "Express",
+      "Express.js",
     ],
     gitHub_server: "https://github.com/tahmid-khan-hub/Recipe-Book-Server",
     gitHub_client: "https://github.com/tahmid-khan-hub/Recipe-Book",
@@ -96,90 +128,92 @@ const Projects = () => {
             <motion.div
               key={index}
               data-aos="fade-up"
-              className="flex flex-col md:flex-row items-center gap-8 bg-white rounded-2xl p-3 mx-1 shadow-md shadow-lime-500 hover:shadow-lg hover:shadow-lime-500 transition duration-300 border border-lime-500"
+              className="flex flex-col md:flex-row md:items-stretch gap-8 bg-white rounded-2xl p-3 mx-1 shadow-sm shadow-lime-500 border border-lime-500"
             >
-              <Swiper
-                modules={[Autoplay]}
-                autoplay={{
-                  delay: 3000,
-                  disableOnInteraction: false,
-                }}
-                loop={true}
-                spaceBetween={10}
-                slidesPerView={1}
-                className="w-full md:w-[60%] h-[380px] rounded-xl"
-              >
-                {project.images.map((img, i) => (
-                  <SwiperSlide key={i}>
-                    <img
-                      src={img}
-                      alt={`${project.title} ${i + 1}`}
-                      className="object-cover w-full h-full rounded-xl"
-                    />
-                  </SwiperSlide>
-                ))}
-              </Swiper>
-
-              <div className="md:w-[40%] space-y-4 text-center md:text-left">
-                <h3 className="text-2xl font-bold text-gray-800">
-                  {project.title}
-                </h3>
-                <p className="px-3 md:px-1 lg:px-0">{project.description}</p>
-                <div className="font-semibold text-left ml-2 md:ml-1 lg:ml-0">
-                  <li>{project.fea1}</li>
-                  <li>{project.fea2}</li>
-                  <li>{project.fea3}</li>
-                </div>
-                <p className="text-sm text-gray-600 font-medium mt-3 md:mt-1 lg:mt-0">
-                  Technologies:
-                </p>
-                <ul className="flex flex-wrap justify-center md:justify-start gap-2 text-sm">
-                  {project.technologies.map((tech, idx) => (
-                    <li
-                      key={idx}
-                      className="bg-lime-200 text-lime-700 px-3 py-2 rounded-full text-xs"
-                    >
-                      {tech}
-                    </li>
+              {/* LEFT: Swiper */}
+              <div className="w-full md:w-[60%] self-stretch">
+                <Swiper
+                  modules={[Autoplay]}
+                  autoplay={{ delay: 3000, disableOnInteraction: false }}
+                  loop={true}
+                  spaceBetween={10}
+                  slidesPerView={1}
+                  className="h-full min-h-[380px] rounded-xl overflow-hidden"
+                >
+                  {project.images.map((img, i) => (
+                    <SwiperSlide key={i} className="h-full">
+                      <img
+                        src={img}
+                        alt={`${project.title} ${i + 1}`}
+                        className="block w-full h-full object-cover rounded-xl"
+                      />
+                    </SwiperSlide>
                   ))}
-                </ul>
+                </Swiper>
+              </div>
 
-                <div className="grid grid-cols-4 md:grid-cols-2 lg:grid-cols-4 gap-2 md:gap-5 lg:gap-8">
+              {/* RIGHT: details */}
+              <div className="md:w-[40%] flex flex-col justify-between">
+                {/* top content */}
+                <div className="space-y-4 text-center md:text-left">
+                  <h3 className="text-2xl font-bold text-gray-800">
+                    {project.title}
+                  </h3>
+                  <p className="px-3 md:px-1 lg:px-0">{project.description}</p>
+                  <div className="font-semibold text-left ml-2 md:ml-1 lg:ml-0">
+                    <li>{project.fea1}</li>
+                    <li>{project.fea2}</li>
+                    <li>{project.fea3}</li>
+                  </div>
+                  <p className="text-sm text-gray-600 font-medium mt-3 md:mt-1 lg:mt-0">
+                    Technologies:
+                  </p>
+                  <ul className="flex flex-wrap justify-center md:justify-start gap-2 text-sm">
+                    {project.technologies.map((tech, idx) => (
+                      <li
+                        key={idx}
+                        className="bg-lime-200 text-lime-700 px-3 py-2 rounded-full text-xs"
+                      >
+                        {tech}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                {/* bottom buttons */}
+                <div className="grid grid-cols-4 md:grid-cols-2 lg:grid-cols-4 gap-2 md:gap-5 lg:gap-8 mt-4">
                   <motion.a
                     href={project.url}
                     target="_blank"
                     whileHover={{ scale: 1.05 }}
-                    className="inline-block rounded-xl py-2 my-4 btn bg-gradient-to-r from-lime-400 via-lime-500 to-lime-500 hover:bg-gradient-to-l hover:from-lime-300 hover:via-lime-400 hover:to-lime-400 border-2 border-lime-300"
+                    className="inline-block rounded-xl py-2 my-2 btn bg-gradient-to-r from-lime-400 via-lime-500 to-lime-500 hover:bg-gradient-to-l hover:from-lime-300 hover:via-lime-400 hover:to-lime-400 border-2 border-lime-300"
                   >
                     Live
                   </motion.a>
-
                   <motion.a
                     href={project.gitHub_client}
                     target="_blank"
                     whileHover={{ scale: 1.05 }}
-                    className="inline-block rounded-xl py-2 my-4 btn bg-gradient-to-r from-lime-400 via-lime-500 to-lime-500 hover:bg-gradient-to-l hover:from-lime-300 hover:via-lime-400 hover:to-lime-400 border-2 border-lime-300"
+                    className="inline-block rounded-xl py-2 my-2 btn bg-gradient-to-r from-lime-400 via-lime-500 to-lime-500 hover:bg-gradient-to-l hover:from-lime-300 hover:via-lime-400 hover:to-lime-400 border-2 border-lime-300"
                   >
                     Client
                   </motion.a>
-
                   {project.gitHub_server && (
                     <motion.a
                       href={project.gitHub_server}
                       target="_blank"
                       whileHover={{ scale: 1.05 }}
-                      className="inline-block rounded-xl py-2 my-4 btn bg-gradient-to-r from-lime-400 via-lime-500 to-lime-500 hover:bg-gradient-to-l hover:from-lime-300 hover:via-lime-400 hover:to-lime-400 border-2 border-lime-300"
+                      className="inline-block rounded-xl py-2 my-2 btn bg-gradient-to-r from-lime-400 via-lime-500 to-lime-500 hover:bg-gradient-to-l hover:from-lime-300 hover:via-lime-400 hover:to-lime-400 border-2 border-lime-300"
                     >
                       Server
                     </motion.a>
                   )}
-
-                  <Link className="inline-block rounded-xl py-2 my-4 btn bg-gradient-to-r from-lime-400 via-lime-500 to-lime-500 hover:bg-gradient-to-l hover:from-lime-300 hover:via-lime-400 hover:to-lime-400 border-2 border-lime-300" to={`projectsDetails/${index}`}><motion.a
-                    whileHover={{ scale: 1.05 }}
-                    
+                  <Link
+                    className="inline-block rounded-xl py-2 my-2 btn bg-gradient-to-r from-lime-400 via-lime-500 to-lime-500 hover:bg-gradient-to-l hover:from-lime-300 hover:via-lime-400 hover:to-lime-400 border-2 border-lime-300"
+                    to={`projectsDetails/${index}`}
                   >
-                    Details
-                  </motion.a></Link>
+                    <motion.a whileHover={{ scale: 1.05 }}>Details</motion.a>
+                  </Link>
                 </div>
               </div>
             </motion.div>
