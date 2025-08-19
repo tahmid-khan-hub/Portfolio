@@ -85,7 +85,7 @@ const Banner = () => {
 
           <motion.a
             whileHover={{ scale: 1.05 }}
-            href="/resume.pdf"
+            href="/MERN_Stack_resume.pdf"
             download="Tahmid Khan MERN Stack Developer Resume.pdf"
             className="btn bg-gradient-to-r from-lime-400 via-lime-500 to-lime-500 hover:bg-gradient-to-l hover:from-lime-300 hover:via-lime-400 hover:to-lime-400 border-2 border-lime-300"
           >

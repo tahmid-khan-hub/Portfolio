@@ -73,7 +73,7 @@ const Navbar = () => {
       <div className="navbar-end">
         
        <motion.a whileHover={{scale: 1.05}} 
-       href="https://drive.google.com/file/d/1Qr-a_rLSk7Pn42RyoX_sl9u1UFKnIG1x/view"
+       href="https://drive.google.com/file/d/16k9w-P6pC50HAqZrSeEqBupy0Y2Kq-LJ/view?usp=sharing"
        target="_blank"
        rel="noopener noreferrer"
        className="btn bg-gradient-to-r from-lime-400 via-lime-500 to-lime-500 hover:bg-gradient-to-l hover:from-lime-300 hover:via-lime-400 hover:to-lime-400 border-2 border-lime-300 ml-2">
